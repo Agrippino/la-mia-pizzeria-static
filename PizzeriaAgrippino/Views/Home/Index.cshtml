@@ -1,7 +1,7 @@
 ﻿@{ Layout = null; }
 
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,17 +14,222 @@
   </head>
   <body>
 <header>
+    <!--prima navbar dove inserisco il mio logo con il nome della pizzeria-->
     <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Bootstrap
+      Agrippino's Pizza
     </a>
   </div>
 </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contatti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">La nostra storia</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        La vera pizza napoletana dal 1800
+      </span>
+    </div>
+  </div>
+</nav>
 </header>
-    <h1>Hello, world!</h1>
-
+<!--Inserisco l'elenco delle pizza -->
+<div class="card">
+  <div class="card-body text-center">
+   Le nostre pizze
+  </div>
+</div>
+<!--Margherita-->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Margherita.png" class="img-fluid rounded-start" alt="Pizza Margherita">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">MArgherita</h5>
+        <p class="card-text">Pomodoro San Marzano D.O.P., fior di latte di Agerola, basilico e olio evo.</p>
+        <p class="card-text"><small class="text-muted">4,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Amatriciana Croccante -->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Amatriciana_Croccante.png" class="img-fluid rounded-start" alt="Amatriciana Croccante">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Amatriciana Croccante</h5>
+        <p class="card-text">Pizza croccante cotta a bassa temperatura con pomodorini del piennolo gialli e rossi sfumati con vino bianco guanciale di cinghiale pecorino romano e provola di agerola.</p>
+        <p class="card-text"><small class="text-muted">10,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--American Party -->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/American_Party.png" class="img-fluid rounded-start" alt="American Party">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">American Party</h5>
+        <p class="card-text">Becon croccante cheddar provola di Agerola salsiccia sbriciolata crunch di cipolla e salsa bbq.</p>
+        <p class="card-text"><small class="text-muted">9,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Carrettiera -->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Carrettiera.png" class="img-fluid rounded-start" alt="Carrettiera">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Carrettiera</h5>
+        <p class="card-text">In caso di allergie alimentari o esigenze dietetiche particolari, ti preghiamo di avvisare direttamente il ristorante prima di ordinare.</p>
+        <p class="card-text"><small class="text-muted">7,50€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Eredita della nonna-->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Eredita_Della_Nonna.png" class="img-fluid rounded-start" alt="Eredità della nonna">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Eredità della nonna</h5>
+        <p class="card-text">Parmigiana di melanzane ricetta tradizionale della nonna, salsiccia di maialino nero sbriciolata, provola affumicata di Agerola, basilico, scaglie di Parmigiano Reggiano 24 mesi e olio evo.</p>
+        <p class="card-text"><small class="text-muted">8,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fuga da futuro-->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Fuda_Dal_Futuro.png" class="img-fluid rounded-start" alt="Fuga dal futuro">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Fuga dal futuro</h5>
+        <p class="card-text">Vellutata di zucchine, fior di latte di Agerola, salmone affumicato, ciuffetti di ricotta di fuscella, zest di limone ed olio evo.</p>
+        <p class="card-text"><small class="text-muted">12,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Genovese di cinghiale -->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Genovese_Di_Cinghiale.png" class="img-fluid rounded-start" alt="Genovese di cinghiale">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Genovese di cinghiale</h5>
+        <p class="card-text">Genovese di cinghiale cotta a bassa temperatura per 24h, provola di agerola, scaglie di parmigiano, olio evo e basilico.</p>
+        <p class="card-text"><small class="text-muted">9,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--KFC -->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/KFC.png" class="img-fluid rounded-start" alt="Pizza KFC">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">KFC</h5>
+        <p class="card-text">Salsa aromatizzata ai peperoni, provola di Agerola, pollo impanato e fritto, chips di patate, spuma di maionese, basilico e olio evo.</p>
+        <p class="card-text"><small class="text-muted">8,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--London 1.9-->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/London_19.png" class="img-fluid rounded-start" alt="London 1.9">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">London 1.9</h5>
+        <p class="card-text">Bacon croccante, fior di latte di Agerola, all'uscita: chips di patate, fonduta di formaggio e olio evo.</p>
+        <p class="card-text"><small class="text-muted">8,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Pesto e pomodori-->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Pesto_Pomodorini.png" class="img-fluid rounded-start" alt="Pesto e pomodori">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Pesto e pomodori</h5>
+        <p class="card-text">Persto di basilico, pomodorini del piennolo, provola di agerola IGP, basilico, scaglie di parmigiano e olio evo.  </p>
+        <p class="card-text"><small class="text-muted">9,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Tre zucca-->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Tre_Zucca.png" class="img-fluid rounded-start" alt="Tre zucca">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Tre zucca</h5>
+        <p class="card-text">Fondo della pizza con crema di zucca, zucca arrostita,tocchettini di zucca, bacon, provola IGP e olio evo.</p>
+        <p class="card-text"><small class="text-muted">11,50€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Orange is the new black -->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/img_pizza/Zuccotta.png" class="img-fluid rounded-start" alt="Orange is the new black">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Orange is the new black</h5>
+        <p class="card-text">Crema di zucca, provola affummicata di agerola, melanzane arrostite, salsiccia di maialino nero sbriciolata, scaglie di parmigiano Reggiano 24 mesi, basilico e olio evo.</p>
+        <p class="card-text"><small class="text-muted">8,00€</small></p>
+      </div>
+    </div>
+  </div>
+</div>
     
     
   </body>
