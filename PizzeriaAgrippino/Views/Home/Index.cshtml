@@ -12,18 +12,19 @@
 
     <title>Agrippino's Pizza</title>
   </head>
-  <body>
+<body>
 <header>
-    <!--prima navbar dove inserisco il mio logo con il nome della pizzeria-->
+<!--prima navbar dove inserisco il logo con il nome della pizzeria-->
     <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-      Agrippino's Pizza
+      <img src="~/img_pizza/Stemma_desiderio.png" alt="Marchio Desiderio" width="60" height="48" class="img-fluid rounded-circle border border-white" class="d-inline-block align-text-top">
+      Pizzeria Desiderio
     </a>
   </div>
+<!--seconda navbar per home,contatti e storia-->
 </nav>
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -44,24 +45,21 @@
   </div>
 </nav>
 </header>
-<!--Inserisco l'elenco delle pizza -->
-<div class="card">
-  <div class="card-body text-center">
-   Le nostre pizze
-  </div>
-</div>
-<div class="Container-fluid">
-<div class="row justify-content-xxl-center">
-<div class= "col-6 col-xxl-6">
-<!--Margherita-->
-<div class="card mb-3" style="max-width: 540px;">
+<div class="Container-fluid justify-content-xxl-center bg-warning bg-opacity-50">
+<div class="row ">
+   <div class= "col-12-xxl mt-2 mb-4 text-center fs-1">
+    Le nostre pizze
+   </div>
+  <!--Margherita-->
+<div class= "col-6 ps-5 mt-3 col-xxl-6">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Margherita.png" class="img-fluid rounded-start" alt="Pizza Margherita">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">MArgherita</h5>
+        <h5 class="card-title">Margherita</h5>
         <p class="card-text">Pomodoro San Marzano D.O.P., fior di latte di Agerola, basilico e olio evo.</p>
         <p class="card-text"><small class="text-muted">4,00€</small></p>
       </div>
@@ -70,8 +68,8 @@
 </div>
 </div>
 <!--Amatriciana Croccante -->
-<div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class= "col-6 mt-3 col-xxl-6">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Amatriciana_Croccante.png" class="img-fluid rounded-start" alt="Amatriciana Croccante">
@@ -87,8 +85,8 @@
 </div>
 </div>
 <!--American Party -->
-<div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class= "col-6 ps-5 col-xxl-6 ">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/American_Party.png" class="img-fluid rounded-start" alt="American Party">
@@ -104,8 +102,8 @@
 </div>
 </div>
 <!--Carrettiera -->
-<div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class= "col-6 col-xxl-6 ">
+<div class="card mb-3 border border-dark shadow-lg " style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Carrettiera.png" class="img-fluid rounded-start" alt="Carrettiera">
@@ -121,8 +119,8 @@
 </div>
 </div>
 <!--Eredita della nonna-->
-<div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class= "col-6 ps-5  col-xxl-6">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Eredita_Della_Nonna.png" class="img-fluid rounded-start" alt="Eredità della nonna">
@@ -139,7 +137,7 @@
 </div>
 <!--Fuga da futuro-->
 <div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Fuda_Dal_Futuro.png" class="img-fluid rounded-start" alt="Fuga dal futuro">
@@ -155,8 +153,8 @@
 </div>
 </div>
 <!--Genovese di cinghiale -->
-<div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class= "col-6 ps-5 col-xxl-6">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Genovese_Di_Cinghiale.png" class="img-fluid rounded-start" alt="Genovese di cinghiale">
@@ -173,7 +171,7 @@
 </div>
 <!--KFC -->
 <div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/KFC.png" class="img-fluid rounded-start" alt="Pizza KFC">
@@ -189,8 +187,8 @@
 </div>
 </div>
 <!--London 1.9-->
-<div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class= "col-6 ps-5  col-xxl-6">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/London_19.png" class="img-fluid rounded-start" alt="London 1.9">
@@ -207,7 +205,7 @@
 </div>
 <!--Pesto e pomodori-->
 <div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Pesto_Pomodorini.png" class="img-fluid rounded-start" alt="Pesto e pomodori">
@@ -223,8 +221,8 @@
 </div>
 </div>
 <!--Tre zucca-->
-<div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class= "col-6 ps-5  col-xxl-6">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Tre_Zucca.png" class="img-fluid rounded-start" alt="Tre zucca">
@@ -241,7 +239,7 @@
 </div>
 <!--Orange is the new black -->
 <div class= "col-6 col-xxl-6">
-<div class="card mb-3" style="max-width: 540px;">
+<div class="card mb-3 border border-dark shadow-lg" style="max-width: 640px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="~/img_pizza/Zuccotta.png" class="img-fluid rounded-start" alt="Orange is the new black">
