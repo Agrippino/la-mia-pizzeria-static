@@ -13,95 +13,135 @@
     <title>Agrippino's Pizza</title>
   </head>
 <body>
-<header>
-<!--prima navbar dove inserisco il logo con il nome della pizzeria-->
-    <nav class="navbar navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="~/img_pizza/Stemma_desiderio.png" alt="Marchio Desiderio" width="60" height="48" class="img-fluid rounded-circle border border-white" class="d-inline-block align-text-top">
-      Pizzeria Desiderio
-    </a>
-  </div>
-<!--seconda navbar per home,contatti e storia-->
-</nav>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contatti</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">La nostra storia</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        La vera pizza napoletana dal 1800
-      </span>
-    </div>
-  </div>
-</nav>
-</header>
-<!--Lista di tutte le pizze, MIGLIORARE DIMENSIONE CARD E CHIEDRE DI HOVER - CHIEDRE A BRYAN -->
-<div class="Container-fluid justify-content-xxl-center bg-warning bg-opacity-50 ">
-<div class="row ">
-   <div class= "col-12-xxl mt-2 mb-4 text-center fs-1">
-    Le nostre pizze
-   </div>
-  <!--Margherita-->
-<div class= "col-6 ps-5 mt-3 col-xxl-6 ">
-<div class="card mb-3 border border-dark shadow" style="max-width: 640px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="~/img_pizza/Margherita.png" class="img-fluid rounded-start" alt="Pizza Margherita">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Margherita</h5>
-        <p class="card-text">Pomodoro San Marzano D.O.P., fior di latte di Agerola, basilico e olio evo.</p>
-        <p class="card-text"><small class="text-muted">4,00€</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!--Amatriciana Croccante -->
-<div class= "col-6 mt-3 col-xxl-6">
-<div class="card mb-3 border border-dark shadow" style="max-width: 640px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="~/img_pizza/Amatriciana_Croccante.png" class="img-fluid rounded-start" alt="Amatriciana Croccante">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Amatriciana Croccante</h5>
-        <p class="card-text">Pizza croccante cotta a bassa temperatura con pomodorini del piennolo gialli e rossi sfumati con vino bianco guanciale di cinghiale pecorino romano e provola di agerola.</p>
-        <p class="card-text"><small class="text-muted">10,00€</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!--American Party -->
-<div class= "col-6 ps-5 col-xxl-6 ">
-<div class="card mb-3 border border-dark shadow" style="max-width: 640px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="~/img_pizza/American_Party.png" class="img-fluid rounded-start" alt="American Party">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">American Party</h5>
-        <p class="card-text">Becon croccante cheddar provola di Agerola salsiccia sbriciolata crunch di cipolla e salsa bbq.</p>
-        <p class="card-text"><small class="text-muted">9,00€</small></p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+ <header>
+        <!--prima navbar dove inserisco il logo con il nome della pizzeria-->
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="~/img_pizza/Stemma_desiderio.png" alt="Marchio Desiderio" width="60" height="48" class="img-fluid rounded-circle border border-white" class="d-inline-block align-text-top">
+                        Pizzeria Desiderio
+                    </a>
+                </div>
+            </nav>
+        <!--seconda navbar per home,contatti e storia-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contatti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">La nostra storia</a>
+                            </li>
+                        </ul>
+                    <!--bottone carrello-->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Carrello
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                        </button>
+                    <!-- Bottone attivato -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Il tuo carrello
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Il tuo ordine comprende: 
+                                <!--probilmente per agigungere qui i prodotti serve un metodo che aggiunge a una lista tutti gli elementi selezionati-->
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Chiudi
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                                Pagamento
+                            </button>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+ </header>
+    <!--Lista di tutte le pizze, MIGLIORARE DIMENSIONE CARD E CHIEDRE DI HOVER - CHIEDRE A BRYAN -->
+        <div class="Container-fluid justify-content-xxl-center bg-warning bg-opacity-50 ">
+         <div class="row ">
+                <div class= "col-12-xxl mt-2 mb-4 text-center fs-1">
+                    Le nostre pizze
+                </div>
+            <!--Margherita-->
+                <div class= "col-6 ps-5 mt-3 col-xxl-6 ">
+                    <div class="card mb-3 border border-dark shadow" style="max-width: 640px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="~/img_pizza/Margherita.png" class="img-fluid rounded-start" alt="Pizza Margherita">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                                Margherita
+                            </h5>
+                            <p class="card-text">
+                                Pomodoro San Marzano D.O.P., fior di latte di Agerola, basilico e olio evo.
+                            </p>
+                            <p class="card-text"><small class="text-muted">
+                                4,00€</small>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            <!--Amatriciana Croccante -->
+                <div class= "col-6 mt-3 col-xxl-6">
+                    <div class="card mb-3 border border-dark shadow" style="max-width: 640px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="~/img_pizza/Amatriciana_Croccante.png" class="img-fluid rounded-start" alt="Amatriciana Croccante">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                            <h5 class="card-title">
+                                Amatriciana Croccante
+                            </h5>
+                            <p class="card-text">
+                                Pizza croccante cotta a bassa temperatura con pomodorini del piennolo gialli e rossi sfumati con vino bianco guanciale di cinghiale pecorino romano e provola di agerola.
+                            </p>
+                            <p class="card-text"><small class="text-muted">
+                                10,00€</small>
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <!--American Party -->
+                <div class= "col-6 ps-5 col-xxl-6 ">
+                    <div class="card mb-3 border border-dark shadow" style="max-width: 640px;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="~/img_pizza/American_Party.png" class="img-fluid rounded-start" alt="American Party">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">American Party</h5>
+                            <p class="card-text">Becon croccante cheddar provola di Agerola salsiccia sbriciolata crunch di cipolla e salsa bbq.</p>
+                            <p class="card-text"><small class="text-muted">9,00€</small></p>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
 <!--Carrettiera -->
 <div class= "col-6 col-xxl-6 ">
 <div class="card mb-3 border border-dark shadow" style="max-width: 640px;">
